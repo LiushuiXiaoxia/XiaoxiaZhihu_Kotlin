@@ -1,4 +1,4 @@
-# XiaoxiaZhihu
+# XiaoxiaZhihu_Kotlin
 
 ---
 
@@ -6,12 +6,16 @@
 
 由于使用非正常手段获取Api，若被告知需停止共享与使用，本人会及时删除此页面与整个项目。
 
+本项目使用Kotlin语言作为开发语言
+
 客户端使用了MVP架构，网络层使用了okhttp+retrofit2，json解析使用gson。
 图片加载使用picasso，注解使用了roboguice+butterknife，各个层次之间通信使用rxjava+rxandroid+eventbus。
 
-## iOS客户端
+## 其他客户端
 
 [iOS客户端](https://github.com/LiushuiXiaoxia/XiaoxiaZhihu_iOS)
+[Android客户端Java版本](https://github.com/LiushuiXiaoxia/XiaoxiaZhihu)
+[Android客户端Kotlin版本](https://github.com/LiushuiXiaoxia/XiaoxiaZhihu_iOS)
 
 ## 效果图
 
