@@ -7,9 +7,9 @@ import android.app.Application
  * Created by xiaqiulei on 2016-03-22.
  */
 
-private var appContextInstance: AppContext? = null;
+private var appContextInstance: AppContext? = null
 
-fun appContextInstance(): AppContext = appContextInstance!!;
+fun appContextInstance(): AppContext = appContextInstance!!
 
 class AppContext : Application() {
 

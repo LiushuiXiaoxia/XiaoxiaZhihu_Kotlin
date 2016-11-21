@@ -17,7 +17,7 @@ import rx.schedulers.Schedulers
  */
 class ZhihuDomainImpl : ZhihuDomain {
 
-    protected var zhihuApi: ZhihuApi
+    private var zhihuApi: ZhihuApi
 
     init {
         zhihuApi = InjectHelp.getInjectInstance(ZhihuApi::class.java)

@@ -7,33 +7,33 @@ import android.util.Log
  * Created by xiaqiulei on 2016-03-22.
  */
 
-fun Any.logv(msg: String, vararg args: Any ?): Int {
+fun Any.logv(msg: String, vararg args: Any?): Int {
     var log = msg
-    if (args.size != 0) {
+    if (args.isNotEmpty()) {
         log = String.format(msg, *args)
     }
     return Log.v(this.javaClass.simpleName, log)
 }
 
-fun Any.logd(msg: String, vararg args: Any ?): Int {
+fun Any.logd(msg: String, vararg args: Any?): Int {
     var log = msg
-    if ( args.size != 0) {
+    if (args.isNotEmpty()) {
         log = String.format(msg, *args)
     }
     return Log.d(this.javaClass.simpleName, log)
 }
 
-fun Any.logi(msg: String, vararg args: Any ?): Int {
+fun Any.logi(msg: String, vararg args: Any?): Int {
     var log = msg
-    if ( args.size != 0) {
+    if (args.isNotEmpty()) {
         log = String.format(msg, *args)
     }
     return Log.i(this.javaClass.simpleName, log)
 }
 
-fun Any.logw(msg: String, vararg args: Any ?): Int {
+fun Any.logw(msg: String, vararg args: Any?): Int {
     var log = msg
-    if ( args.size != 0) {
+    if (args.isNotEmpty()) {
         log = String.format(msg, *args)
     }
     return Log.w(this.javaClass.simpleName, log)
@@ -45,7 +45,7 @@ fun Any.logw(tr: Throwable): Int {
 
 fun Any.loge(msg: String, vararg args: Any?): Int {
     var log = msg
-    if (args.size != 0) {
+    if (args.isNotEmpty()) {
         log = String.format(msg, *args)
     }
     return Log.e(this.javaClass.simpleName, log)

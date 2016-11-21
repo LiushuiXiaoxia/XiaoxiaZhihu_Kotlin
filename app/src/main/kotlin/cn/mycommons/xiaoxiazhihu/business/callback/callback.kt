@@ -81,12 +81,13 @@ open class SimpleSubscriber<T : BaseResponse> : Subscriber<T>() {
         logd(this.toString() + "....onHandleFinish")
     }
 
-    fun isSucccess(): Boolean = isSuccess;
+    fun isSucccess(): Boolean = isSuccess
 
-    fun getResponse(): T? = response;
+    fun getResponse(): T? = response
 }
 
-open class AdvancedSubscriber<T : BaseResponse>(private var loadDataView: ILoadDataView? = null) : SimpleSubscriber<T>() {
+open class AdvancedSubscriber<T : BaseResponse>(private var loadDataView: ILoadDataView? = null)
+    : SimpleSubscriber<T>() {
 
     override fun onStart() {
         super.onStart()

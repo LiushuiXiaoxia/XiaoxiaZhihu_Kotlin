@@ -11,7 +11,7 @@ interface IStartView : IMvpView
 
 class StartPresenter : BaseMvpPresenter<IStartView>() {
 
-    lateinit internal var zhihuDomain: ZhihuDomain
+    internal var zhihuDomain: ZhihuDomain
 
     init {
         zhihuDomain = InjectHelp.getInjectInstance(ZhihuDomain::class.java)
